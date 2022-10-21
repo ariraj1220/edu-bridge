@@ -1,0 +1,20 @@
+CREATE TABLE `edu_bridge_sql_task`.`class` (
+  `Enrollment No` INT NOT NULL,
+  `Student Name` VARCHAR(45) NOT NULL,
+  `Section` VARCHAR(45) NOT NULL,
+  `Subject Id` INT NOT NULL,
+  `Marks` INT NOT NULL,
+  PRIMARY KEY (`Enrollment No`));
+
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('1', 'Tim', 'A', '1', '70');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('2', 'Jim', 'A', '2', '75');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('3', 'Kim', 'B', '3', '65');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('4', 'Tom', 'B', '4', '77');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('5', 'John', 'C', '5', '60');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('6', 'Joe', 'C', '1', '82');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('7', 'James', 'B', '2', '76');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('8', 'Henry', 'C', '5', '68');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('9', 'Matt', 'B', '3', '71');
+INSERT INTO `edu_bridge_sql_task`.`class` (`Enrollment No`, `Student Name`, `Section`, `Subject Id`, `Marks`) VALUES ('10', 'Paul', 'A', '4', '79');
+
+select section, count(section) as 'No. of Candidate greater than or equal to 75 marks' from class where Marks >= 75 group by section;
