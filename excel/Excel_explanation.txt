@@ -1,0 +1,25 @@
+Topic: Excel 
+Sneha is an MIS executive her boss provided her a list of customers in Excel as shown below 
+Customer Name Duplicate Name 
+Kapil khatri
+Arti Ahuja 
+Eshank sharma 
+Amit kumar 
+Kapil khatri
+Raj Sharma 
+Sunil Yadav
+Eshank sharma 
+Swati Singh 
+Animesh verma 
+Mohit Jain 
+Arti Ahuja 
+Ashutosh Mahajan 
+Akshay Rathod 
+Harmeet kaur
+Amit kumar
+
+Now her boss wants to populate the Duplicate name field for names that occurs more than once.
+
+First, sort the customer's name and apply the conditional formatting > Duplicate cell.
+
+then using IFERROR function, MATCH function, and COUNTIF function, find out the duplicate names and print that 
